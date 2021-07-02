@@ -4,13 +4,14 @@ import todoStore from "./stores/todoStore";
 
 const Todo = (props) => {
   const handleDelete = () => {
-    todoStore.todosDelete(props.todo);
+    todoStore.deleteTodo(props.todo);
   };
 
   return (
     <div>
-      <li className={`${props.todo.done ? "completed" : ""}`}>
+      <li>
         {props.todo.name}
+        {" - " + props.todo.status}
       </li>
       <button>finished</button>
       <button onClick={handleDelete}>delete</button>

@@ -5,9 +5,8 @@ import todoStore from "./stores/todoStore";
 const Form = () => {
   const [newTodo, setNewTodo] = useState({
     id: "",
+    status: "undone",
     name: "",
-    done: false,
-    priority: "middle",
   });
 
   const handleChange = (event) => {
@@ -15,7 +14,7 @@ const Form = () => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    todoStore.todosAdd(newTodo);
+    todoStore.addTodo(newTodo);
   };
 
   return (
@@ -40,7 +39,7 @@ const Form = () => {
         </button>
       </div>
       <div className="select">
-        <select name="todos">
+        <select /*onChange={statusHandler}*/ name="todos">
           <option value="all">All</option>
           <option value="finished">Finished</option>
           <option value="unfinished">Not Finished</option>

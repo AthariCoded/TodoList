@@ -8,12 +8,12 @@ class TodoStore {
     makeAutoObservable(this);
   }
 
-  todosAdd = (addedTodo) => {
+  addTodo = (addedTodo) => {
     addedTodo.id = this.todos.length + 1;
     this.todos.push(addedTodo);
   };
 
-  todosDelete = (deletedTodo) => {
+  deleteTodo = (deletedTodo) => {
     const todoDeleted = this.todos.filter((todo) => todo.id !== deletedTodo.id);
     this.todos = todoDeleted;
   };

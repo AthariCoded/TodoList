@@ -7,7 +7,7 @@ const todos = [
   {
     id: 2,
     status: "undone",
-    name: "Buy car",
+    name: "School meeting",
   },
   {
     id: 3,
