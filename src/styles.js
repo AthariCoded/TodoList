@@ -16,4 +16,16 @@ export const Wrapper = styled.div`
   margin-bottom: 40px;
   justify-content: center;
   align-items: center;
+  font-size: 40px;
+`;
+
+export const ButtonStyl = styled.button`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const ListView = styled.div`
+  margin: 15px;
+  position: relative;
 `;

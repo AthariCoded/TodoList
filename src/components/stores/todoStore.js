@@ -8,12 +8,19 @@ class TodoStore {
     makeAutoObservable(this);
   }
 
+  todoFinished = (todoFinished) => {
+    const todo = this.todos.find((todo) => todo.id === todoFinished.id);
+    if (todo.status === "undone") todo.status = "done";
+    else todo.status = "undone";
+  };
+
   todosAdd = (addedTodo) => {
     addedTodo.id = this.todos.length + 1;
+    //status= undone if statement to be done when clicked
     this.todos.push(addedTodo);
   };
 
-  todosDelete = (deletedTodo) => {
+  deleteTodo = (deletedTodo) => {
     const todoDeleted = this.todos.filter((todo) => todo.id !== deletedTodo.id);
     this.todos = todoDeleted;
   };

@@ -1,13 +1,12 @@
 import { useState } from "react";
 import React from "react";
 import todoStore from "./stores/todoStore";
-
 const Form = () => {
   const [newTodo, setNewTodo] = useState({
     id: "",
+    status: "undone",
     name: "",
     done: false,
-    priority: "middle",
   });
 
   const handleChange = (event) => {
@@ -36,7 +35,7 @@ const Form = () => {
           type="submit"
           id="button-addon2"
         >
-          Add+
+          Add Task
         </button>
       </div>
       <div className="select">
