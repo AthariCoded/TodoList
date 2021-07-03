@@ -6,10 +6,7 @@ const Form = () => {
     id: "",
     status: "undone",
     name: "",
-<<<<<<< HEAD
     done: false,
-=======
->>>>>>> 6c300771249c409a2e8dcdaaa88ca41b907a9a52
   });
 
   const handleChange = (event) => {
