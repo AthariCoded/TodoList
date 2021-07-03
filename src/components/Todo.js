@@ -21,7 +21,6 @@ const Todo = (props) => {
         }`}
       >
         {props.todo.name}
-        {" - " + props.todo.status}
       </li>
       {/* onClick = {handleClick} */}
       {/* (props.todo.status === "undone")? "finished" :"unfinished" */}

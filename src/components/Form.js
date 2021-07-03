@@ -14,7 +14,7 @@ const Form = () => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    todoStore.addTodo(newTodo);
+    todoStore.todosAdd(newTodo);
   };
 
   return (
@@ -39,7 +39,7 @@ const Form = () => {
         </button>
       </div>
       <div className="select">
-        <select /*onChange={statusHandler}*/ name="todos">
+        <select name="todos">
           <option value="all">All</option>
           <option value="finished">Finished</option>
           <option value="unfinished">Not Finished</option>
