@@ -8,6 +8,7 @@ class TodoStore {
     makeAutoObservable(this);
   }
 
+<<<<<<< HEAD
   todoFinished = (todoFinished) => {
     const todo = this.todos.find((todo) => todo.id === todoFinished.id);
     if (todo.status === "undone") todo.status = "done";
@@ -15,6 +16,9 @@ class TodoStore {
   };
 
   todosAdd = (addedTodo) => {
+=======
+  addTodo = (addedTodo) => {
+>>>>>>> 6c300771249c409a2e8dcdaaa88ca41b907a9a52
     addedTodo.id = this.todos.length + 1;
     //status= undone if statement to be done when clicked
     this.todos.push(addedTodo);

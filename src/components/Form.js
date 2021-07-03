@@ -6,7 +6,10 @@ const Form = () => {
     id: "",
     status: "undone",
     name: "",
+<<<<<<< HEAD
     done: false,
+=======
+>>>>>>> 6c300771249c409a2e8dcdaaa88ca41b907a9a52
   });
 
   const handleChange = (event) => {
@@ -14,7 +17,7 @@ const Form = () => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    todoStore.todosAdd(newTodo);
+    todoStore.addTodo(newTodo);
   };
 
   return (
@@ -39,7 +42,7 @@ const Form = () => {
         </button>
       </div>
       <div className="select">
-        <select name="todos">
+        <select /*onChange={statusHandler}*/ name="todos">
           <option value="all">All</option>
           <option value="finished">Finished</option>
           <option value="unfinished">Not Finished</option>

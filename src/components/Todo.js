@@ -13,6 +13,7 @@ const Todo = (props) => {
   /* new function to handle the handleClick todoStore.todosDelete(props.todo); */
   return (
     <div>
+<<<<<<< HEAD
       <li
         className={`${
           props.todo.status === "done"
@@ -20,7 +21,11 @@ const Todo = (props) => {
             : "list-group-item list-group-item-primary"
         }`}
       >
+=======
+      <li>
+>>>>>>> 6c300771249c409a2e8dcdaaa88ca41b907a9a52
         {props.todo.name}
+        {" - " + props.todo.status}
       </li>
       {/* onClick = {handleClick} */}
       {/* (props.todo.status === "undone")? "finished" :"unfinished" */}

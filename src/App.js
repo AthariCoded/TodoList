@@ -12,6 +12,7 @@ function App() {
         <Form />
         <TodoList />
       </Wrapper>
+      <TodoList />
     </div>
   );
 }
