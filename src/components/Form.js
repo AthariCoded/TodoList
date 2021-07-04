@@ -3,7 +3,6 @@ import React from "react";
 import todoStore from "./stores/todoStore";
 const Form = () => {
   const [newTodo, setNewTodo] = useState({
-    id: "",
     status: "undone",
     name: "",
     done: false,

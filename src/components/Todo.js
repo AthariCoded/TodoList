@@ -39,6 +39,23 @@ const Todo = (props) => {
         delete
       </button>
     </div>
+
+    // athari suggestion
+    // <div>
+    //   <div className="todo">
+    //     <ul className="todo-item">
+    //       <li className={`${props.todo.done ? "completed" : ""}`}>
+    //         {props.todo.name}
+    //         {props.todo.done ? " :Done" : " :Not Done"}
+
+    //         <button onClick={handleFinish}>
+    //           {props.todo.done ? "✓" : "Done?"}{" "}
+    //         </button>
+    //         <button onClick={handleDelete}>delete</button>
+    //       </li>
+    //     </ul>
+    //   </div>
+    // </div>
   );
 };
 export default observer(Todo);
